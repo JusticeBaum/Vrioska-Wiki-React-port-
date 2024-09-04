@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel = "stylesheet" href = "./styling/style.css">
+    <title>Codex Vrioska</title>
+</head>
+<body>
+    <div class = "Container">
+        <div class = "site-body">
+            <div class = "col" id = "left">
+                <form class = "search-container"> 
+                     <span class = "search-icon">
+                        <img src="./styling/icons/search.svg" alt="Icon of a magnifying glass in a minimalistic style">
+                     </span>
+                    <div class = "input-container">
+                        <input type="text" class = "input" placeholder="Search pages" id = "search-input">
+                        <br>
+                        <ul class = "dropdown" id = "dropdown">
+                            <!-- Matches will be inserted here -->
+                        </ul>   
+                    </div>
+                </form>
+                <div id = "left-sidebar-buttons">
+                    <details class = "container-button" id ="page-links">
+                        <summary>Player Characters</summary>
+                        <ul >
+                            <li>
+                                <a href="./html_pages/blue.html">Blue</a>
+                            </li>
+                            <li>
+                                <a href="./html_pages/neomona.html">Neomona</a>
+                            </li>
+                            <li>
+                                <a href="./html_pages/orris.html">Orris</a>
+                            </li>
+                            <li>
+                                <a href="./html_pages/ortlen.html">Ortlen</a>
+                            </li>
+                            <li>
+                                <a href="./html_pages/percy.html">Percy</a>
+                            </li>
+                            <li>
+                                <a href="./html_pages/rosen.html">Rosen</a>
+                            </li>
+                            <li>
+                                <a href="./sabellax.html">Sabellax</a>
+                            </li>
+                        </ul>
+                    </details>
+                    <details class = "container-button">
+                        <summary>Nation Notes</summary>
+                    </details>
+                    <details class = "container-button">
+                        <summary>Session Notes</summary>
+                    </details>
+                    <details class = "container-button">
+                        <summary>Misc. notes</summary>
+                        <ul>
+                            <li>
+                                <a href="./html_pages/timekeeping.html">Calendar</a>
+                            </li>
+                        </ul>
+                    </details>
+                </div>
+            </div>
+            <div class = "center">
+                <div class = "title-header">
+                    <h1 id = "site-header">Codex Vrioska</h1>
+                </div>
+            </div>
+            <div class = "col" id = "right">
+                <h3>On this page</h3>
+                <ul class = "right-headings" id="headings-list">
+                    <!-- Headings will be displayed here -->
+                </ul>
+            </div>
+        </div>
+    </div>
+    <script src = "./javascript/index.js"></script>
+</body>
+</html>
