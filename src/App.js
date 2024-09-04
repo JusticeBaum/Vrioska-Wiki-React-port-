@@ -1,19 +1,23 @@
-import React from 'react';
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import React, { useState, useEffect } from 'react';
+import { BrowserRouter as Router, Route, Routes, useLocation } from 'react-router-dom';
 import LeftSidebar from './components/LeftSidebar';
 import MainContent from './components/MainContent';
 import RightSidebar from './components/RightSidebar';
+import Blue from './components/players/constructed_components/Blue'
 import './styles/style.css';
+import Player from './components/players/base_components/Player';
 
-//TODO: String that maps character name string to react components
 const players = [
-  'Blue',
-  'Neomona',
-  'Orris',
-  'Ortlen',
-  'Percy',
-  'Rosen',
-  'Sabellax',
+  {
+    name: "Blue",
+    component: Blue
+  },
+  // 'Neomona',
+  // 'Orris',
+  // 'Ortlen',
+  // 'Percy',
+  // 'Rosen',
+  // 'Sabellax',
 ];
 
 const nations = [
@@ -25,43 +29,65 @@ const misc = [
 ];
 
 const generateRoutes = (items) => {
-  return items.map((item, index) => (
+  return items.map((character, index) => (
     <Route
       key={index}
-      path={`/${item.toLowerCase()}`}
-      element={<MainContent />}
+      path={`/${character.name.toLowerCase()}`}
+      element={< character.component />}
     />
   ));
 };
 
 // Returns routes for all player characters
 const generatePlayerRoutes = (players) => {
-  // return players.map((character, index) => (
-  //   <Route
-  //     key={index}
-  //     path={`/${character.toLowerCase()}`}
-  //     element={<MainContent />}
-  //   />
-  // ));
-  return [
+  return players.map((character, index) => (
+    <Route
+      key={index}
+      path={`/${character.name.toLowerCase()}`}
+      element={<character.component />}
+    />
+  ));
+};
 
-  ]
+// Updates the rightSidebar as to what the center component is
+const RoutesWrapper = ( {setCurrentComponent} ) => {
+  const location = useLocation();
+
+  useEffect(() => {
+    const path = location.pathname;
+    if (path === '/') {
+      setCurrentComponent('Home');
+    } else {
+      setCurrentComponent('Other');
+    }
+  }, [location.pathname, setCurrentComponent]);
+
+  return (
+    <Routes>
+      <Route path="/" element={<MainContent />} />
+      {generateRoutes(players)}
+      {/* {generateRoutes(nations)} */}
+      {/* {generateRoutes(misc)} */}
+    </Routes>
+  );
 };
 
 const App = () => {
+  const [currentComponent, setCurrentComponent] = useState('');
   return (
     <Router>
       <div className="Container">
         <div className="site-body">
           <LeftSidebar />
           {/* <MainContent /> */}
-          <Routes>
+          {/* <Routes>
             <Route path = "/" element={<MainContent />}/>
-            {generateRoutes(players)}
-            {generateRoutes(nations)}
-            {generateRoutes(misc)}
-          </Routes>
-          <RightSidebar />
+             {generateRoutes(players)}
+             {/* {generateRoutes(nations)} */}
+            {/* {generateRoutes(misc)} */}
+          {/* </Routes> */}
+          <RoutesWrapper setCurrentComponent={setCurrentComponent} />
+          <RightSidebar center = {currentComponent}/>
         </div>
       </div>
     </Router>

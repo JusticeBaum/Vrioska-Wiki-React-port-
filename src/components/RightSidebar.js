@@ -1,16 +1,15 @@
 import React, { useEffect, useState } from 'react';
 
-const RightSidebar = () => {
+const RightSidebar = ({ center }) => {
   const [headings, setHeadings] = useState([]);
 
   useEffect(() => {
-    // Find all h1 elements on the page
-    const h1Elements = Array.from(document.querySelectorAll('h1'));
-    // Extract their text content
-    const h1Texts = h1Elements.map((heading) => heading.textContent);
-    // Update state with the headings
-    setHeadings(h1Texts);
-  }, []); // Empty dependency array means this effect runs once after initial render
+    const headerTag = center == 'MainContent' ? 'h1' : 'h2';
+
+    const hElements = Array.from(document.querySelectorAll(headerTag));
+    const hTexts = hElements.map((heading) => heading.textContent);
+    setHeadings(hTexts);
+  }, [center]);
 
   return (
     <div className="col" id="right">
