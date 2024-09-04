@@ -1,23 +1,39 @@
 import React from 'react';
-import { Image }  from 'react-native';
 
-const Sidebar = ({ title, imageSrc, altText, info }) => {
+const PlayerSidebar = ({
+  imageURL,
+  fullName,
+  pronouns,
+  aliases,
+  race,
+  classType,
+  age,
+  languages,
+  places,
+  family,
+  connections,
+  professions
+}) => {
   return (
     <aside className="sidebar">
-      {title && <h2 style={{ textAlign: 'center' }}>{title}</h2>}
-      <img src={imageSrc} alt="Character" />
-      <Image source = {{imageSrc}}/>
-      {info && info.length > 0 && (
-        <ul>
-          {info.map((item, index) => (
-            <li key={index}>
-              <strong>{item.label}: </strong>{item.value}
-            </li>
-          ))}
-        </ul>
-      )}
+      <h2 style={{ textAlign: 'center' }}>Character</h2>
+      <img src={imageURL} alt="Character" style={{ width: '100%', height: 'auto' }} />
+      <h2>Character Information</h2>
+      <ul>
+        <li><strong>Full Name: </strong>{fullName}</li>
+        <li><strong>Pronouns: </strong>{pronouns}</li>
+        <li><strong>Aliases: </strong>{aliases}</li>
+        <li><strong>Race: </strong>{race}</li>
+        <li><strong>Class: </strong>{classType}</li>
+        <li><strong>Age: </strong>{age}</li>
+        <li><strong>Languages: </strong>{languages}</li>
+        <li><strong>Place(s): </strong>{places}</li>
+        <li><strong>Family: </strong>{family}</li>
+        <li><strong>Connections: </strong>{connections}</li>
+        <li><strong>Profession(s): </strong>{professions}</li>
+      </ul>
     </aside>
   );
 };
 
-export default Sidebar;
+export default PlayerSidebar;

@@ -1,11 +1,11 @@
 import React, { useState, useEffect } from 'react';
 import { BrowserRouter as Router, Route, Routes, useLocation } from 'react-router-dom';
 import LeftSidebar from './components/LeftSidebar';
+import SiteHeader from './components/SiteHeader';
 import MainContent from './components/MainContent';
 import RightSidebar from './components/RightSidebar';
 import Blue from './components/players/constructed_components/Blue'
 import './styles/style.css';
-import Player from './components/players/base_components/Player';
 
 const players = [
   {
@@ -86,7 +86,10 @@ const App = () => {
              {/* {generateRoutes(nations)} */}
             {/* {generateRoutes(misc)} */}
           {/* </Routes> */}
+          <div className='center'>
+          <SiteHeader/>
           <RoutesWrapper setCurrentComponent={setCurrentComponent} />
+          </div>
           <RightSidebar center = {currentComponent}/>
         </div>
       </div>

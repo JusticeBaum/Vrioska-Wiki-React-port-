@@ -1,21 +1,40 @@
 import React from 'react';
 
-const Content = ({ title, headings, listItems }) => {
+const PlayerContent = ({
+  appearanceContent,
+  personalityContent,
+  biographyContent,
+  relationshipsContent,
+  characterInfoContent,
+  completedQuestsItems
+}) => {
   return (
     <section className="content">
-      {title && <h1>{title}</h1>}
-      {headings && headings.map((heading, index) => (
-        <h2 key={index}>{heading}</h2>
-      ))}
-      {listItems && listItems.length > 0 && (
-        <ul>
-          {listItems.map((item, index) => (
-            <li key={index}>{item}</li>
-          ))}
-        </ul>
-      )}
+      <h1>Description</h1>
+      
+      <h2>Appearance</h2>
+      <p>{appearanceContent}</p>
+      
+      <h2>Personality</h2>
+      <p>{personalityContent}</p>
+      
+      <h1>Biography</h1>
+      <p>{biographyContent}</p>
+      
+      <h1>Relationships</h1>
+      <p>{relationshipsContent}</p>
+      
+      <h1>Character Information</h1>
+      <p>{characterInfoContent}</p>
+      
+      <h2>Completed Quests</h2>
+      <ul>
+        {completedQuestsItems.map((item, index) => (
+          <li key={index}>{item}</li>
+        ))}
+      </ul>
     </section>
   );
 };
 
-export default Content;
+export default PlayerContent;
