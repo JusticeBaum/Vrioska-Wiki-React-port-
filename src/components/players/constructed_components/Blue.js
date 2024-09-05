@@ -16,32 +16,33 @@ const content = [
 const Blue = () => {
     return (
         <div className="Container">
-        <div className="site-body">
-        <div className ="character-container">
-            <PlayerContent
-                appearanceContent={content[0]}
-                personalityContent={content[1]}
-                biographyContent={content[2]}
-                relationshipsContent={content[3]}
-                characterInfoContent=""
-                completedQuestsItems={content[4]}
-            />
-            <PlayerSidebar
-                imageURL={blueImage}
-                fullName="Blue"
-                pronouns="He/They"
-                aliases="Throne model 87-B"
-                race="Warforged"
-                classType="Fighter (Gunslinger)"
-                age="3"
-                languages="Lower Draconic (Common)"
-                places="Moonweaver Tavern (TODO: Link)"
-                family="???"
-                connections="SOLO (TODO: Link)"
-                professions="???"
-            />
+            <div className="site-body">
+                <div className ="character-container">
+                    <PlayerContent
+                        appearanceContent={content[0]}
+                        personalityContent={content[1]}
+                        biographyContent={content[2]}
+                        relationshipsContent={content[3]}
+                        characterInfoContent=""
+                        completedQuestsItems={content[4]}
+                    />
+                    <PlayerSidebar
+                        imageURL={blueImage}
+                        fullName="Blue"
+                        pronouns="He/They"
+                        aliases="Throne model 87-B"
+                        race="Warforged"
+                        classType="Fighter (Gunslinger)"
+                        age="3 years"
+                        languages="Lower Draconic (Common)"
+                        places="Moonweaver Tavern (TODO: Link)"
+                        family="???"
+                        connections="SOLO (TODO: Link)"
+                        professions="???"
+                    />
+                </div>
+            </div>
         </div>
-        </div></div>
       );
 };
 

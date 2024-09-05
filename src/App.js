@@ -5,6 +5,7 @@ import SiteHeader from './components/SiteHeader';
 import MainContent from './components/MainContent';
 import RightSidebar from './components/RightSidebar';
 import Blue from './components/players/constructed_components/Blue'
+import Neomona from './components/players/constructed_components/Neomona'
 import './styles/style.css';
 
 const players = [
@@ -12,7 +13,10 @@ const players = [
     name: "Blue",
     component: Blue
   },
-  // 'Neomona',
+  {
+    name: "Neomona",
+    component: Neomona
+  }
   // 'Orris',
   // 'Ortlen',
   // 'Percy',
