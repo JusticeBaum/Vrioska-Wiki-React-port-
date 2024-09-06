@@ -14,7 +14,7 @@ const links = [
     { text: 'Sabellax', url: '/rosen'}
   ],
   [ // Nations
-
+    { text: 'Dundaxian Empire', url : '/dundax'}
   ],
   [ // Misc
 

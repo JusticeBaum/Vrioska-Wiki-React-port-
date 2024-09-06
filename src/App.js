@@ -5,6 +5,7 @@ import SiteHeader from './components/SiteHeader';
 import MainContent from './components/MainContent';
 import RightSidebar from './components/RightSidebar';
 import { Blue, Neomona, Ortlen, Rosen, Percy, Sabellax} from './components/players/constructed_components/index'
+import { Dundax } from './components/nations/constructed_components/index'
 import './styles/style.css';
 
 const players = [
@@ -38,6 +39,10 @@ const players = [
 ];
 
 const nations = [
+  {
+    name: 'Dundax',
+    component: Dundax
+  }
 ];
 
 const misc = [
@@ -48,11 +53,11 @@ const misc = [
 ];
 
 const generateRoutes = (items) => {
-  return items.map((character, index) => (
+  return items.map((item, index) => (
     <Route
       key={index}
-      path={`/${character.name.toLowerCase()}`}
-      element={< character.component />}
+      path={`/${item.name.toLowerCase()}`}
+      element={< item.component />}
     />
   ));
 };
@@ -74,14 +79,16 @@ const RoutesWrapper = ( {setCurrentComponent} ) => {
     <Routes>
       <Route path="/" element={<MainContent />} />
       {generateRoutes(players)}
-      {/* {generateRoutes(nations)} */}
+      {generateRoutes(nations)}
       {/* {generateRoutes(misc)} */}
     </Routes>
   );
 };
 
 const App = () => {
-  const [currentComponent, setCurrentComponent] = useState('');
+
+  const [centerComponent, setCenterComponent] = useState('');
+
   return (
     <Router>
       <div className="Container">
@@ -96,9 +103,9 @@ const App = () => {
           {/* </Routes> */}
           <div className='center'>
           <SiteHeader/>
-          <RoutesWrapper setCurrentComponent={setCurrentComponent} />
+          <RoutesWrapper setCurrentComponent={setCenterComponent} />
           </div>
-          <RightSidebar center = {currentComponent}/>
+          <RightSidebar center = {centerComponent}/>
         </div>
       </div>
     </Router>

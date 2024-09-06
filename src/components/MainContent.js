@@ -4,7 +4,6 @@ import SiteHeader from './SiteHeader';
 const MainContent = () => {
   return (
     <div className = "center">
-                    <SiteHeader />
                     <h1>Welcome!</h1>
                         <p>This wiki serves as a resource for players in `Vrioska`, a homebrew TTRPG setting initially designed with DnD 5e in mind. Do note that information presented is from the player's perspective
                             and as such should not be considered as necessarily complete or wholly accurate to the 'actual' lore.</p>

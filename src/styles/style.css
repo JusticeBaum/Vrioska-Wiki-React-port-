@@ -169,6 +169,11 @@ h1, h2, h3 {
     width: 200px;
 }
 
+#military li {
+    list-style: circle;
+    list-style-position: inside;
+}
+
 footer {
     background: #222;
     color: #fff;
