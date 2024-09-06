@@ -27,6 +27,7 @@ const Blue = () => {
                         completedQuestsItems={content[4]}
                     />
                     <PlayerSidebar
+                        charName={'Blue'}
                         imageURL={blueImage}
                         fullName="Blue"
                         pronouns="He/They"

@@ -1,0 +1,4 @@
+[ZoneTransfer]
+ZoneId=3
+ReferrerUrl=https://cloudconvert.com/
+HostUrl=https://us-east.storage.cloudconvert.com/tasks/66eee633-d7ad-4054-b0b7-72600bba30eb/Ortlen_screenshot.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=cloudconvert-production%2F20240903%2Fva%2Fs3%2Faws4_request&X-Amz-Date=20240903T233549Z&X-Amz-Expires=86400&X-Amz-Signature=a68c178672117cb1ed246e98e7e1e2ea28512a88b730148744f29ed0bc876cd4&X-Amz-SignedHeaders=host&response-content-disposition=attachment%3B%20filename%3D%22Ortlen_screenshot.png%22&response-content-type=image%2Fpng&x-id=GetObject

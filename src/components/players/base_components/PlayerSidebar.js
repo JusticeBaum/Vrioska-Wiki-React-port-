@@ -1,6 +1,7 @@
 import React from 'react';
 
 const PlayerSidebar = ({
+  charName,
   imageURL,
   fullName,
   pronouns,
@@ -16,7 +17,7 @@ const PlayerSidebar = ({
 }) => {
   return (
     <aside className="sidebar">
-      <h2 style={{ textAlign: 'center' }}>Character</h2>
+      <h2 style={{ textAlign: 'center' }}>{charName}</h2>
       <img src={imageURL} alt="Character" style={{ width: '100%', height: 'auto' }} />
       <h2>Character Information</h2>
       <ul>

@@ -18,13 +18,13 @@ const PlayerContent = ({
       <h2>Personality</h2>
       <p>{personalityContent}</p>
       
-      <h1>Biography</h1>
+      <h2>Biography</h2>
       <p>{biographyContent}</p>
       
-      <h1>Relationships</h1>
+      <h2>Relationships</h2>
       <p>{relationshipsContent}</p>
       
-      <h1>Character Information</h1>
+      <h2>Character Information</h2>
       <p>{characterInfoContent}</p>
       
       <h2>Completed Quests</h2>

@@ -4,8 +4,7 @@ import LeftSidebar from './components/LeftSidebar';
 import SiteHeader from './components/SiteHeader';
 import MainContent from './components/MainContent';
 import RightSidebar from './components/RightSidebar';
-import Blue from './components/players/constructed_components/Blue'
-import Neomona from './components/players/constructed_components/Neomona'
+import { Blue, Neomona, Ortlen, Rosen, Percy, Sabellax} from './components/players/constructed_components/index'
 import './styles/style.css';
 
 const players = [
@@ -16,20 +15,36 @@ const players = [
   {
     name: "Neomona",
     component: Neomona
-  }
+  },
   // 'Orris',
-  // 'Ortlen',
+  {
+    name: 'Ortlen',
+    component: Ortlen
+  },
   // 'Percy',
-  // 'Rosen',
+  {
+    name: 'Percy',
+    component: Percy
+  },
+  {
+    name: 'Rosen',
+    component: Rosen
+  },
   // 'Sabellax',
+  {
+    name: 'Sabellax',
+    component: Sabellax
+  }
 ];
 
 const nations = [
-
 ];
 
 const misc = [
-
+  // {
+  //   name: 'Calendar'
+  //   component: Calendar
+  // }
 ];
 
 const generateRoutes = (items) => {
@@ -38,17 +53,6 @@ const generateRoutes = (items) => {
       key={index}
       path={`/${character.name.toLowerCase()}`}
       element={< character.component />}
-    />
-  ));
-};
-
-// Returns routes for all player characters
-const generatePlayerRoutes = (players) => {
-  return players.map((character, index) => (
-    <Route
-      key={index}
-      path={`/${character.name.toLowerCase()}`}
-      element={<character.component />}
     />
   ));
 };

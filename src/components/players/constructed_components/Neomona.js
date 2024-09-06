@@ -32,6 +32,7 @@ const Neomona = () => {
                         completedQuestsItems={content[4]}
                     />
                     <PlayerSidebar
+                        charName={'Neomona'}
                         imageURL={neoImage}
                         fullName="Neomona"
                         pronouns="She/Her"
