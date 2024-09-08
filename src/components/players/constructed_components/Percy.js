@@ -2,7 +2,7 @@ import React, { useEffect } from 'react';
 import PlayerContent from '../base_components/PlayerContent';
 import PlayerSidebar from '../base_components/PlayerSidebar';
 import '../../../styles/style.css';
-// import percyImage from '../../../styles/img/Percy.png'
+import percyImage from '../../../styles/img/Percy.png'
 
 const content = [
     "",
@@ -28,7 +28,7 @@ const Percy = () => {
                     />
                     <PlayerSidebar
                         charName={'Percy'}
-                        imageURL={''}
+                        imageURL={percyImage}
                         fullName="Persephone Granosh"
                         pronouns="She/Her"
                         aliases=""

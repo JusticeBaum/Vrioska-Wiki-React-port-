@@ -5,11 +5,11 @@ import '../../../styles/style.css';
 import blueImage from '../../../styles/img/Blue.png'
 
 const content = [
-    "Blue is a Warforged whom stands at a whopping 4'3`\". They are most commonly seen wearing a large cloak that obscures a majority of their lower body. \
+    "Blue is a Warforged whom stands at a whopping 4' 3\". They are most commonly seen wearing a large cloak that obscures a majority of their lower body. \
         They have demonstrated an ability to change their appearance somewhat, though the level of control they have over this is unclear at the moment. ",
     "Bitch",
     "Blue's origins are a mystery to all, including himself. When Blue met the party they were working as a tavern hand at the Moonweaver Tavern (TODO: Link). After meeting the party they were visited by a number of shadowy figures in bronze theatre masks who caused Blue's vision to distort and fail. They awoke from a strange dream featuring a man telling him to `come home` bearing the sigil of Eberron (TODO: Link) on their shoulder \
-        According to Vecna (TODO: Link), Blue was originally created on the continent of Carcosa (TODO: Link) as a peacekeeping device meant to end all conflict, but the night before they could be activated they were stolen away by a number of deserting Repairers (TODO: Link).",
+        According to Vecna (TODO: Link), Blue was originally created within the nation of Carcosa (TODO: Link) as a peacekeeping device meant to end all conflict, but the night before they could be activated they were stolen away by a number of deserting Repairers (TODO: Link).",
     "Within the party, Blue and Percy appear to get along best. The two can commonly be seen engaging in some form of tomfoolery, mischief, or shenanigans together",
     ["Quest: Learn the identity of your creator | Reward: Access to the Ophelia Module & Charge Shot"],
 ]

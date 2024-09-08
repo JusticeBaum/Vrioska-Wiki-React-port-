@@ -30,12 +30,12 @@ const Ortlen = () => {
                         charName={'Ortlen'}
                         imageURL={ortImage}
                         fullName="Ortlen"
-                        pronouns="?"
+                        pronouns="She/Her"
                         aliases=""
                         race="Tortle"
                         classType="Rogue, Barbarian"
-                        age=""
-                        languages="Lower Draconic (Common), Thieve's Cant"
+                        age="24 years"
+                        languages="Lower Draconic (Common), Halfling, Thieve's Cant"
                         places="Icarus"
                         family="Brom (Father figure)"
                         connections="SOLO (TODO: Link)"

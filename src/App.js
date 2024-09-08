@@ -6,6 +6,7 @@ import MainContent from './components/MainContent';
 import RightSidebar from './components/RightSidebar';
 import { Blue, Neomona, Ortlen, Rosen, Percy, Sabellax} from './components/players/constructed_components/index'
 import { Dundax } from './components/nations/constructed_components/index'
+import { Aberdeen } from './components/settlements/constructed_components/index'
 import './styles/style.css';
 
 const players = [
@@ -17,12 +18,10 @@ const players = [
     name: "Neomona",
     component: Neomona
   },
-  // 'Orris',
   {
     name: 'Ortlen',
     component: Ortlen
   },
-  // 'Percy',
   {
     name: 'Percy',
     component: Percy
@@ -31,7 +30,6 @@ const players = [
     name: 'Rosen',
     component: Rosen
   },
-  // 'Sabellax',
   {
     name: 'Sabellax',
     component: Sabellax
@@ -44,6 +42,29 @@ const nations = [
     component: Dundax
   }
 ];
+
+const settlements = [
+  // {
+  //   name: "Penrith",
+  //   component: Penrith
+  // },
+  // {
+  //   name: "Elsmwell",
+  //   component: Elmswell
+  // },
+  // {
+  //   name: "Luodon",
+  //   component: Luodon
+  // },
+  {
+    name: "Aberdeen",
+    component: Aberdeen
+  },
+  // {
+    // name: "Icarus",
+    // component: Icarus
+  // }
+]
 
 const misc = [
   // {
@@ -80,6 +101,7 @@ const RoutesWrapper = ( {setCurrentComponent} ) => {
       <Route path="/" element={<MainContent />} />
       {generateRoutes(players)}
       {generateRoutes(nations)}
+      {generateRoutes(settlements)}
       {/* {generateRoutes(misc)} */}
     </Routes>
   );
@@ -94,13 +116,6 @@ const App = () => {
       <div className="Container">
         <div className="site-body">
           <LeftSidebar />
-          {/* <MainContent /> */}
-          {/* <Routes>
-            <Route path = "/" element={<MainContent />}/>
-             {generateRoutes(players)}
-             {/* {generateRoutes(nations)} */}
-            {/* {generateRoutes(misc)} */}
-          {/* </Routes> */}
           <div className='center'>
           <SiteHeader/>
           <RoutesWrapper setCurrentComponent={setCenterComponent} />

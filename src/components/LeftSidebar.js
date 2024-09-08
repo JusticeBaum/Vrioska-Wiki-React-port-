@@ -7,14 +7,17 @@ const links = [
   [ // Players
     { text: 'Blue', url: '/blue'},
     { text: 'Neomona', url: '/neomona'},
-    { text: 'Orris', url: '/orris'},
+    // { text: 'Orris', url: '/orris'},
     { text: 'Ortlen', url: '/ortlen'},
     { text: 'Percy', url: '/percy'},
     { text: 'Rosen', url: '/rosen'},
-    { text: 'Sabellax', url: '/rosen'}
+    { text: 'Sabellax', url: '/sabellax'}
   ],
   [ // Nations
     { text: 'Dundaxian Empire', url : '/dundax'}
+  ],
+  [ // Settlements
+    { text: 'Aberdeen', url: '/aberdeen'}
   ],
   [ // Misc
 
@@ -48,9 +51,19 @@ const LeftSidebar = () => {
           </ul>
         </details>
         <details className="container-button">
-          <summary>Misc. notes</summary>
+          <summary>Settlement Notes</summary>
           <ul>
               {links[2].map((link, index) => (
+                <li key={index}>
+                  <Link to={link.url}>{link.text}</Link>
+                </li>
+            ))}
+          </ul>
+        </details>
+        <details className="container-button">
+          <summary>Misc. notes</summary>
+          <ul>
+              {links[3].map((link, index) => (
                 <li key={index}>
                   <Link to={link.url}>{link.text}</Link>
                 </li>

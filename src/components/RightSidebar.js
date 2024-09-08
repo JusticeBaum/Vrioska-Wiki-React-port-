@@ -4,20 +4,27 @@ const RightSidebar = ({ center }) => {
   const [headings, setHeadings] = useState([]);
 
   useEffect(() => {
-    const headerTag = center == 'MainContent' ? 'h1' : 'h2';
+    console.log(center)
+    const headerTag = center == 'Home' ? 'h1' : 'h2';
 
     const hElements = Array.from(document.querySelectorAll(headerTag));
     const hTexts = hElements.map((heading) => heading.textContent);
-    setHeadings(hTexts);
+
+    const headings = []
+    for (let i = 1; i < hTexts.length; i++) {
+      headings.push(<li>{hTexts[i]}</li>)
+    }
+
+    setHeadings(headings)
   }, [center]);
+
+
 
   return (
     <div className="col" id="right">
       <h3>On this page</h3>
       <ul className="right-headings" id="headings-list">
-        {headings.map((heading, index) => (
-          <li key={index}>{heading}</li>
-        ))}
+        {headings}
       </ul>
     </div>
   );

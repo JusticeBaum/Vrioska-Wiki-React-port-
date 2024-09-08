@@ -106,6 +106,12 @@ h1, h2, h3 {
     padding: 20px;
 }
 
+.center #world_map {
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+}
+
 .title-header {
     background-color: var(--center-bg);
     text-align: center;
@@ -273,4 +279,17 @@ input[type=text]:focus {
     display: inline-block;
     list-style: inside;
     width: 80%;
+}
+.map_container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+}
+
+.map_container img {
+    display: block;
+    width: 100%;
+    max-height: 880px;
+    margin: auto;
 }
