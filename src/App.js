@@ -6,7 +6,7 @@ import MainContent from './components/MainContent';
 import RightSidebar from './components/RightSidebar';
 import { Blue, Neomona, Ortlen, Rosen, Percy, Sabellax} from './components/players/constructed_components/index'
 import { Dundax } from './components/nations/constructed_components/index'
-import { Aberdeen } from './components/settlements/constructed_components/index'
+import { Aberdeen, Icarus } from './components/settlements/constructed_components/index'
 import './styles/style.css';
 
 const players = [
@@ -60,10 +60,10 @@ const settlements = [
     name: "Aberdeen",
     component: Aberdeen
   },
-  // {
-    // name: "Icarus",
-    // component: Icarus
-  // }
+  {
+    name: "Icarus",
+    component: Icarus
+  }
 ]
 
 const misc = [

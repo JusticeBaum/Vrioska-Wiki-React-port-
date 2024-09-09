@@ -17,7 +17,8 @@ const links = [
     { text: 'Dundaxian Empire', url : '/dundax'}
   ],
   [ // Settlements
-    { text: 'Aberdeen', url: '/aberdeen'}
+    { text: 'Aberdeen', url: '/aberdeen'},
+    { text: 'Icarus', url: '/icarus'}
   ],
   [ // Misc
 

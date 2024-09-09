@@ -1,6 +1,5 @@
 import React from "react";
 
-
 const Map = ({url}) => {
     return (
         <div className="map_container">

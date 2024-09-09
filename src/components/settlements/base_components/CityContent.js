@@ -2,7 +2,7 @@ import React from 'react'
 import Map from '../../Map';
 
 const CityContent = ({
-    content: {desc, mapURL, points, history}
+    content: {desc, mapURL, society, points, history}
 }) => {
     return (
         <section className="content">
