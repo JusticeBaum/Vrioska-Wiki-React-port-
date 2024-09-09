@@ -1,5 +1,6 @@
 import React from 'react';
 import SiteHeader from './SiteHeader';
+import Map from './Map';
 import map from '../styles/img/Vrioska.jpg';
 
 const MainContent = () => {
@@ -58,9 +59,7 @@ const MainContent = () => {
                             <li>Worship of the three banished kings is at a minimum looked down upon and not done openly.</li>
                         </ul>
                     <h1>Map</h1>
-                        <div className = "map_container">
-                            <img id ='world_map' src = {map} alt="map"/>
-                        </div>
+                        <Map url={map}/>
                 </div>
   );
 }

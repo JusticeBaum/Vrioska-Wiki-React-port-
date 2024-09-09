@@ -6,9 +6,6 @@ const HistorySidebar = ({
     historyInfo: { plane, continent, capital, established, fell},
     cultureInfo: { religion, language, population }
 }) => {
-    // const [nationName, fullName, type, headOfGov, currentHead, military] = generalInfo ;
-    // const [plane, continent, capital, established, fell] = historyInfo;
-    // const [religion, language, population] = cultureInfo;
   return (
     <aside className="sidebar">
       <h2 style={{ textAlign: 'center' }}>{ nationName }</h2>

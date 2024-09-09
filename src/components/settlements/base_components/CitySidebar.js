@@ -2,17 +2,16 @@ import React from 'react';
 
 const CitySidebar = ({
     imageURL,
-    generalInfo: { nationName, fullName, constructed, leader, currentLead },
-    locationInfo: { plane, contienent, region, districts, points_of_interest},
+    generalInfo: { name, constructed, leader, currentLead },
+    locationInfo: { plane, contienent, region, districts},
     societyInfo: { population, races, affiliation}
 }) => {
   return (
     <aside className="sidebar">
-      <h2 style={{ textAlign: 'center' }}>{ nationName }</h2>
+      <h2 style={{ textAlign: 'center' }}>{ name }</h2>
         <img src={imageURL} alt="Character" style={{ width: '100%', height: 'auto' }} />
         <h2>General Information</h2>
         <ul>
-          <li><strong>Full Name: </strong>{ fullName }</li>
           <li><strong>Constructed: </strong>{ constructed }</li>
           <li><strong>Leader: </strong>{ leader }</li>
           <li><strong>Current Leader: </strong>{ currentLead }</li>
@@ -23,7 +22,6 @@ const CitySidebar = ({
           <li><strong>Continent: </strong>{ contienent }</li>
           <li><strong>Region: </strong>{ region }</li>
           <li><strong>Districts: </strong>{ districts }</li>
-          <li><strong>Points of Interest: </strong>{points_of_interest }</li>
         </ul>
       <h2>Societal Information</h2>
       <ul>
