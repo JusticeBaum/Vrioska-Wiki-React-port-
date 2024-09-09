@@ -3,7 +3,7 @@ import CitySidebar from "../base_components/CitySidebar";
 
 const content = {
     desc: "",
-    mapURL: '../../../styles/img/Blue.png'
+    mapURL: '../../../styles/img/Aberdeen_map.jpg'
 }
 
 const generalInfo = {

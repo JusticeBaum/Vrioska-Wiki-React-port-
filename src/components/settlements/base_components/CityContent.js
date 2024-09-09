@@ -9,7 +9,7 @@ const CityContent = ({
             <h2>City Description</h2>
             {}
             <h2>Map</h2>
-            <Map url={mapURL}/>
+                <Map url={mapURL}/>
             <h2>Society</h2>
             <h2>Points of Interest</h2>
             <h2>History</h2>
