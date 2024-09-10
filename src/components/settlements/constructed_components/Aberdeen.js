@@ -1,9 +1,10 @@
 import CityContent from '../base_components/CityContent'
 import CitySidebar from "../base_components/CitySidebar";
+import map from "../../../styles/img/Aberdeen_map.jpg"
 
 const content = {
     desc: "",
-    mapURL: '../../../styles/img/Aberdeen_map.jpg',
+    mapURL: map,
     society: "",
     points: "",
     history: ""
@@ -48,7 +49,7 @@ const Aberdeen = () => {
                         content={content} 
                     />
                     <CitySidebar
-                        imageURL={""}
+                        imageURL={map}
                         generalInfo={generalInfo}
                         locationInfo={locationInfo}
                         societyInfo={societyInfo}
