@@ -10,7 +10,6 @@ const CitySidebar = ({
   return (
     <aside className="sidebar">
       <h2 style={{ textAlign: 'center' }}>{ name }</h2>
-        {/* <img src={imageURL} alt="Character" style={{ width: '100%', height: 'auto' }} /> */}
         <Slideshow images = {images}/>
         <h2>General Information</h2>
         <ul>

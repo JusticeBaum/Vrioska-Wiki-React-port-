@@ -53,6 +53,8 @@ h1, h2, h3 {
     font-size: 18px;
 }
 
+
+
 .site-body {
     display: flex;
     flex-direction: row;
@@ -351,4 +353,10 @@ input[type=text]:focus {
     border-bottom: 10px solid transparent;
     border-right: 20px solid var(--text-color);
     transform: translate(-50%, -50%);
+  }
+
+  .points {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
   }
