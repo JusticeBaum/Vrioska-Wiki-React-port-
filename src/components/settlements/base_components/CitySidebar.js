@@ -1,7 +1,8 @@
 import React from 'react';
+import Slideshow from '../../Slideshow';
 
 const CitySidebar = ({
-    imageURL,
+    images,
     generalInfo: { name, constructed, leader, currentLead },
     locationInfo: { plane, contienent, region, districts},
     societyInfo: { population, races, affiliation}
@@ -9,7 +10,8 @@ const CitySidebar = ({
   return (
     <aside className="sidebar">
       <h2 style={{ textAlign: 'center' }}>{ name }</h2>
-        <img src={imageURL} alt="Character" style={{ width: '100%', height: 'auto' }} />
+        {/* <img src={imageURL} alt="Character" style={{ width: '100%', height: 'auto' }} /> */}
+        <Slideshow images = {images}/>
         <h2>General Information</h2>
         <ul>
           <li><strong>Constructed: </strong>{ constructed }</li>
