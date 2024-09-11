@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import logo from '../styles/img/logo.jpg';
+import Logo from './Logo'
 import SearchBar from './SearchBar';
 
 const links = [
@@ -13,6 +13,12 @@ const links = [
     { text: 'Rosen', url: '/rosen'},
     { text: 'Sabellax', url: '/sabellax'}
   ],
+  [ // Notable NPCs
+
+  ],
+  [ // Factions
+
+  ],
   [ // Nations
     { text: 'Dundaxian Empire', url : '/dundax'}
   ],
@@ -21,14 +27,14 @@ const links = [
     { text: 'Icarus', url: '/icarus'}
   ],
   [ // Misc
-
+    {text: 'Timekeeping', url: '/time'}
   ]
 ];
 
 const LeftSidebar = () => {
   return (
     <div className="col" id="left">
-      <img src={logo} alt="Site Logo" className="site-logo" />
+      <Logo />
       <SearchBar linkGroups={links}/>
       <div id="left-sidebar-buttons">
         <details className="container-button" id="page-links">
@@ -41,8 +47,8 @@ const LeftSidebar = () => {
             ))}
           </ul>
         </details>
-        <details className="container-button">
-          <summary>Nation Notes</summary>
+        <details className="container-button" id="page-links">
+          <summary>Notable NPCs</summary>
           <ul>
               {links[1].map((link, index) => (
                 <li key={index}>
@@ -51,8 +57,8 @@ const LeftSidebar = () => {
             ))}
           </ul>
         </details>
-        <details className="container-button">
-          <summary>Settlement Notes</summary>
+        <details className="container-button" id="page-links">
+          <summary>Factions</summary>
           <ul>
               {links[2].map((link, index) => (
                 <li key={index}>
@@ -62,9 +68,29 @@ const LeftSidebar = () => {
           </ul>
         </details>
         <details className="container-button">
-          <summary>Misc. notes</summary>
+          <summary>Nation Notes</summary>
           <ul>
               {links[3].map((link, index) => (
+                <li key={index}>
+                  <Link to={link.url}>{link.text}</Link>
+                </li>
+            ))}
+          </ul>
+        </details>
+        <details className="container-button">
+          <summary>Settlement Notes</summary>
+          <ul>
+              {links[4].map((link, index) => (
+                <li key={index}>
+                  <Link to={link.url}>{link.text}</Link>
+                </li>
+            ))}
+          </ul>
+        </details>
+        <details className="container-button">
+          <summary>Misc. notes</summary>
+          <ul>
+              {links[5].map((link, index) => (
                 <li key={index}>
                   <Link to={link.url}>{link.text}</Link>
                 </li>

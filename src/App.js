@@ -7,6 +7,7 @@ import RightSidebar from './components/RightSidebar';
 import { Blue, Neomona, Ortlen, Rosen, Percy, Sabellax} from './components/players/constructed_components/index'
 import { Dundax } from './components/nations/constructed_components/index'
 import { Aberdeen, Icarus } from './components/settlements/constructed_components/index'
+import { Time } from './components/misc/index'
 import './styles/style.css';
 
 const players = [
@@ -60,17 +61,17 @@ const settlements = [
     name: "Aberdeen",
     component: Aberdeen
   },
-  {
-    name: "Icarus",
-    component: Icarus
-  }
+  // {
+  //   name: "Icarus",
+  //   component: Icarus
+  // }
 ]
 
 const misc = [
-  // {
-  //   name: 'Calendar'
-  //   component: Calendar
-  // }
+  {
+    name: 'Time',
+    component: Time
+  }
 ];
 
 const generateRoutes = (items) => {
@@ -102,7 +103,7 @@ const RoutesWrapper = ( {setCurrentComponent} ) => {
       {generateRoutes(players)}
       {generateRoutes(nations)}
       {generateRoutes(settlements)}
-      {/* {generateRoutes(misc)} */}
+      {generateRoutes(misc)}
     </Routes>
   );
 };

@@ -15,7 +15,7 @@ const MainContent = () => {
                         <h2>Terrestrial History</h2>
                             <p>Shortly after the formation of Vrioska, it was populated by the first lifeforms: the dragons(TODO: Link to dragons). These dragons were the dominant species of the planes for approximately 800 years,
                                 ruling the races they viewed as beneath them with an iron fist. Forced labor en masse was the norm, as was wanton razing of whole continents. Scholars disagree on the exact start year of our uprising 
-                                against the drakes, but the range most oft heard is between 180 - 147 PB. This conflict became known as the '<em>One True War</em>' or the '<em>Great Drake War</em>'.</p>
+                                against the drakes, but the range most oft heard is between 280 - 247 PB. This conflict became known as the '<em>One True War</em>' or the '<em>Great Drake War</em>'.</p>
                         <h2>Cosmology</h2>
                             <p>All culture's religions or belief systems are, by definition, disparate and occasionally contradictory. There are, however, some common threads through which a basic cosmological history can be gathered.</p>
                             <ol>
