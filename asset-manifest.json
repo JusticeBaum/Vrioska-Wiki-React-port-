@@ -1,0 +1,29 @@
+{
+  "files": {
+    "main.css": "/Vrioska-Wiki-React-port-/static/css/main.e5089fca.css",
+    "main.js": "/Vrioska-Wiki-React-port-/static/js/main.08a6cd77.js",
+    "static/js/453.089842d7.chunk.js": "/Vrioska-Wiki-React-port-/static/js/453.089842d7.chunk.js",
+    "static/media/Percy.png": "/Vrioska-Wiki-React-port-/static/media/Percy.8ea81e18450869225aae.png",
+    "static/media/Vrioska.jpg": "/Vrioska-Wiki-React-port-/static/media/Vrioska.7a89dc1cc8bc44290665.jpg",
+    "static/media/Aberdeen_map.jpg": "/Vrioska-Wiki-React-port-/static/media/Aberdeen_map.34a52944e27ca82c1a6c.jpg",
+    "static/media/icarus_map.jpg": "/Vrioska-Wiki-React-port-/static/media/icarus_map.e0ecde153834be2222a5.jpg",
+    "static/media/dundax_arms.png": "/Vrioska-Wiki-React-port-/static/media/dundax_arms.c25df01313142f9497d1.png",
+    "static/media/Neomona.png": "/Vrioska-Wiki-React-port-/static/media/Neomona.40c73fe5ef72b8381910.png",
+    "static/media/Ortlen.png": "/Vrioska-Wiki-React-port-/static/media/Ortlen.e1f4101d5fc981fcba55.png",
+    "static/media/Rosen.png": "/Vrioska-Wiki-React-port-/static/media/Rosen.9ba6032b396b182b7b42.png",
+    "static/media/Sabellax.png": "/Vrioska-Wiki-React-port-/static/media/Sabellax.669ea839ef9b08f12c90.png",
+    "static/media/Blue.png": "/Vrioska-Wiki-React-port-/static/media/Blue.5f84b7cc87a509c8ce8f.png",
+    "static/media/yellow_sign.png": "/Vrioska-Wiki-React-port-/static/media/yellow_sign.0d412c4ff1af9b863350.png",
+    "static/media/logo.png": "/Vrioska-Wiki-React-port-/static/media/logo.bcd97f4b9b94ba40d198.png",
+    "static/media/Cathedral-9Ydly.ttf": "/Vrioska-Wiki-React-port-/static/media/Cathedral-9Ydly.de47eeaf2f57913ebded.ttf",
+    "index.html": "/Vrioska-Wiki-React-port-/index.html",
+    "static/media/search.svg": "/Vrioska-Wiki-React-port-/static/media/search.22aeee5f4079dec611181b547363d8c4.svg",
+    "main.e5089fca.css.map": "/Vrioska-Wiki-React-port-/static/css/main.e5089fca.css.map",
+    "main.08a6cd77.js.map": "/Vrioska-Wiki-React-port-/static/js/main.08a6cd77.js.map",
+    "453.089842d7.chunk.js.map": "/Vrioska-Wiki-React-port-/static/js/453.089842d7.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.e5089fca.css",
+    "static/js/main.08a6cd77.js"
+  ]
+}
