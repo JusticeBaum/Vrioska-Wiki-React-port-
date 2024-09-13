@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { Route, Routes, useLocation, HashRouter as Router } from 'react-router-dom';
+import { Route, Routes, useLocation, BrowserRouter as Router } from 'react-router-dom';
 import LeftSidebar from './components/LeftSidebar';
 import SiteHeader from './components/SiteHeader';
 import MainContent from './components/MainContent';
@@ -133,7 +133,7 @@ const App = () => {
   const [centerComponent, setCenterComponent] = useState('');
 
   return (
-    <Router>
+    <Router basename='Vrioska-Wiki-React-port-'>
       <div className="Container">
         <div className="site-body">
           <LeftSidebar />
