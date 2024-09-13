@@ -7,7 +7,7 @@ import RightSidebar from './components/RightSidebar';
 import { Blue, Neomona, Ortlen, Rosen, Percy, Sabellax} from './components/players/constructed_components/index'
 import { Dundax } from './components/nations/constructed_components/index'
 import { Aberdeen, Icarus } from './components/settlements/constructed_components/index'
-import { Time } from './components/misc/index'
+import { Alagadda, InnerPlanes, OneTrueWar, Time, YalDaBaoth, Eberron } from './components/misc/index'
 import './styles/style.css';
 
 const players = [
@@ -71,6 +71,26 @@ const misc = [
   {
     name: 'Time',
     component: Time
+  },
+  {
+    name: 'Inner_Planes',
+    component: InnerPlanes
+  },
+  {
+    name: 'One_True_War',
+    component: OneTrueWar
+  },
+  {
+    name: "Yal'Da-Baoth",
+    component: YalDaBaoth
+  },
+  {
+    name: "Alagadda",
+    component: Alagadda
+  },
+  {
+    name: "Eberron",
+    component: Eberron
   }
 ];
 

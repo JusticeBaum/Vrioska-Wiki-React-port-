@@ -27,7 +27,12 @@ const links = [
     { text: 'Icarus', url: '/icarus'}
   ],
   [ // Misc
-    {text: 'Timekeeping', url: '/time'}
+    {text: 'Timekeeping', url: '/time'},
+    {text: 'Inner Planes', url: '/inner_planes'},
+    {text: "One True War/Great Drake War", url: '/one_true_war'},
+    {text: 'Yal\'da-Baoth', url: '/yal\'da-baoth'},
+    {text: "Alagadda", url: '/alagadda'},
+    {text: 'Eberron', url: '/eberron'}
   ]
 ];
 
