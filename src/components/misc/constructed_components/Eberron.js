@@ -4,6 +4,19 @@ import DeitySidebar from "../base_components/DeitySidebar";
 
 const images = [];
 
+const content = {
+    appearance: <p>
+        bitch
+    </p>,
+    symbol: <p>a bitch</p>,
+    personality: <p>bitchy</p>,
+    tenants: <p></p>,
+    bio: <p>One of the Three Kings, who slew their brothers in a bid for power</p>,
+    artifacts: <p></p>,
+    sites: <p></p>,
+    relations: <p></p>,
+    celestials: <p></p>
+}
 const general= {
     name: "Eberron",
     titles: [
@@ -29,7 +42,7 @@ const general= {
 
 const worship = {
     religions: [
-        "Dundaxian Polytheism",
+        "",
     ],
     worshippers: [],
     holiday: "",
@@ -41,16 +54,18 @@ const worship = {
 
 const Eberron = () => {
     return (
-        <div className="container">
+        <div className="Container">
             <div className="site-body">
-                <div className="character-container"></div>   
-                    <DeityContent 
+                <div className="character-container">
+                    <DeityContent
+                        info={content}
                     />
                     <DeitySidebar
                             images={images}
                             generalInfo={general}
                             worshipInfo={worship}
                     />
+                </div>   
             </div>  
         </div>
     );
