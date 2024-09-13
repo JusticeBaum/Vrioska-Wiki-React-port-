@@ -2,14 +2,16 @@ import React from "react";
 import Slideshow from '../../Slideshow'
 
 const DeitySidebar = ({
-    images,
+    images: { src, desc},
     generalInfo: { name, titles, spheres, symbols, gender},
     worshipInfo: { religions, worshippers, holiday, temples, domains, patrons, artifacts},
 }) => {
     return (
         <aisde className="sidebar">
             <h2 style={{ textAlign: 'center' }}>{ name }</h2>
-            <Slideshow images={images}/>
+            {/* <Slideshow images={images}/> */}
+            <img src = {src} />
+            <p className="image_subtitle">{desc}</p>
             <h2>Deity Information</h2>
             <ul>
                 <li>
@@ -26,9 +28,9 @@ const DeitySidebar = ({
                 </li>
                 <li>
                     <strong>Symbols: </strong>
-                    { symbols.map((item, index) => {
-                        <li key = {index}>{item}</li>
-                    })}
+                    { symbols.map((item, index) => (
+                    <li key={index}>{item}</li>
+                    ))}
                 </li>
                 <li><strong>Gender: </strong>{ gender }</li>
             </ul>
@@ -58,9 +60,9 @@ const DeitySidebar = ({
                 </li>
                 <li>
                     <strong>Associated Domains: </strong> 
-                    {domains.map((item, index) => {
-                        <li key = {index}>{item}</li>
-                    })}
+                    { domains.map((item, index) => (
+                    <li key={index}>{item}</li>
+                    ))}
                 </li>
                 <li>
                     <strong>Associated Patron Archetypes: </strong> 

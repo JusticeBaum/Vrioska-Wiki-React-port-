@@ -360,3 +360,7 @@ input[type=text]:focus {
     flex-direction: row;
     gap: 20px;
   }
+
+  .image_subtitle {
+    text-align: center;
+  }

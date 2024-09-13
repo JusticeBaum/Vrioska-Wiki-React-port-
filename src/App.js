@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { BrowserRouter as Router, Route, Routes, useLocation } from 'react-router-dom';
+import { Route, Routes, useLocation, HashRouter as Router } from 'react-router-dom';
 import LeftSidebar from './components/LeftSidebar';
 import SiteHeader from './components/SiteHeader';
 import MainContent from './components/MainContent';
@@ -61,10 +61,10 @@ const settlements = [
     name: "Aberdeen",
     component: Aberdeen
   },
-  // {
-  //   name: "Icarus",
-  //   component: Icarus
-  // }
+  {
+    name: "Icarus",
+    component: Icarus
+  }
 ]
 
 const misc = [

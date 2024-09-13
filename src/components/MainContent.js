@@ -55,7 +55,7 @@ const MainContent = () => {
                     <h1>Culture</h1>
                         <p>Again, the intricacies of culture are many. But there exist very few similarities. They are not unanimous, but they are common.</p>
                         <ul>
-                            <li>Minimum of mistrust against lineages with ties to the Outer Planes. Tiefling, Genasi, etc.</li>
+                            <li>Minimum of mistrust against lineages with ties to the Outer Planes: Tiefling, Genasi, etc.</li>
                             <li>Worship of the three banished kings is at a minimum looked down upon and not done openly.</li>
                         </ul>
                     <h1>Map</h1>

@@ -6,45 +6,52 @@ const images = [];
 
 const content = {
     appearance: <p>
-        bitch
     </p>,
-    symbol: <p>a bitch</p>,
-    personality: <p>bitchy</p>,
+    symbol: <p></p>,
+    personality: <p></p>,
     tenants: <p></p>,
-    bio: <p>One of the Three Kings, who slew their brothers in a bid for power</p>,
+    bio: <p>One of the creators' supposed original children, whom slew its kindred in a bid for power. One of the Three Kings.</p>,
     artifacts: <p></p>,
     sites: <p></p>,
     relations: <p></p>,
-    celestials: <p></p>
+    celestials: <ul>
+        <li>Herald</li>
+        <li></li>
+    </ul>
 }
 const general= {
-    name: "",
+    name: "Yal'da-Baoth",
     titles: [
+        "Lord of Flesh",
+        "The Scarlet King",
+        "The Vermillion Lord"
     ],
     spheres: [
-        "",
+        "Flesh",
+        "Rot"
     ],
     symbols: [
-
+        "Bloody crown(s)",
+        "Human remains with fungal growths"
     ],
-    gender: "Masculine (He/Him)",
-    religion: "?",
-    worshippers: "",
-    holiday: "",
-    temples: "",
-    domains: "",
-    patron_type: "",
-    artifacts: ""
+    gender: "N/A (It/Its)",
+    
 };
 
 const worship = {
     religions: [
-        "Dundaxian Polytheism",
+
     ],
-    worshippers: [],
+    worshippers: [
+
+    ],
     holiday: "",
     temples: [],
-    domains: [],
+    domains: [
+        "Hunger",
+        "Fungi",
+        "Blood",
+    ],
     patrons: [],
     artifacts: []
 }
