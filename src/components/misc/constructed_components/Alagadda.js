@@ -6,32 +6,35 @@ const images = [];
 
 const content = {
     appearance: <p>
+        bitch
     </p>,
-    symbol: <p></p>,
-    personality: <p></p>,
+    symbol: <p>a bitch</p>,
+    personality: <p>bitchy</p>,
     tenants: <p></p>,
-    bio: <p>One of the creators' supposed original children, whom slew its kindred in a bid for power. One of the Three Kings.</p>,
+    bio: <p>One of the Three Kings, who slew their brothers in a bid for power</p>,
     artifacts: <p></p>,
     sites: <p></p>,
     relations: <p></p>,
     celestials: <p></p>
 }
 const general= {
-    name: "Alagadda",
+    name: "Eberron",
     titles: [
-        "Lord of Illusions",
-        "Violet King",
-        "Silent King"
     ],
     spheres: [
-        "Illusion",
-        "Storm"
+        "",
     ],
     symbols: [
-        "Vacant throne",
-        "Noose"
+
     ],
-    gender: "N/A (It/Its)",
+    gender: "Masculine (He/Him)",
+    religion: "?",
+    worshippers: "",
+    holiday: "",
+    temples: "",
+    domains: "",
+    patron_type: "",
+    artifacts: ""
 };
 
 const worship = {

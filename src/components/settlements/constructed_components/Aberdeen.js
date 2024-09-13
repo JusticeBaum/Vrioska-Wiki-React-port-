@@ -6,10 +6,10 @@ const images = [
     <img key = "1" src = {map}/>,
 ]
 const content = {
-    desc: <p style={{fontSize: 19}}>Aberdeen is a three tiered city built into the Marrowborne mountain range within the eastern Dundaxian empire. The city is seated across the three tallest mountains in the range. These are colloquially referred to as the 'Kingsgrave Mountains'
+    desc: <p style={{fontSize: 19}}>Aberdeen is a three tiered city built into the Marrowborne mountain range within the eastern Dundaxian empire. The city is seated across the three tallest mountains in the range. These are colloquially referred to as the 'Kingsgrave Mountains' \
     and is said to be where the corpses of the three Kings fell after Aa slew them (predominant theology here is that they were slain, not sealed nor banished).</p>, 
     mapURL: map,
-    society: <p>Aberdeen is predominantly a mining town, and is responsible for forging a vast
+    society: <p>Aberdeen is predominantly a mining town, and is responsible for forging a vast \
     majority of Dundaxian military arms. The town is reportedly a 'ghost town' during working hours, which range from dawn to dusk. The town also has a thriving nightlife, due to its predominantly 
     Gnomish culture and harsh working conditions. It is not uncommon for there to be nightly fireworks shows and street performances.</p>,
     points:

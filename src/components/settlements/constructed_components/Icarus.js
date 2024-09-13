@@ -1,26 +1,21 @@
 import React from "react";
 import CityContent from "../base_components/CityContent";
 import CitySidebar from "../base_components/CitySidebar";
-import map from '../../../styles/img/icarus_map.jpg'
-
-const images = [
-    <img key = "0" src = { map } />,
-];
 
 const content = {
     desc: "",
-    mapURL: map,
+    mapURL: '',
     society: "",
     points: "",
     history: ""
-};
+}
 
 const generalInfo = {
     name: 'Icarus',
     constructed: '',
     leader: '',
     currentLead: ""
-};
+}
 
 const locationInfo = {
     plane: "Crossroads (Prime Material)", 
@@ -51,13 +46,13 @@ const Icarus = () => {
             <div className="site-body">
                 <div className='character-container'>
                     <CityContent
-                        content={content} 
+                        content={""} 
                     />
                     <CitySidebar
-                        images={images}
-                        generalInfo={generalInfo}
-                        locationInfo={locationInfo}
-                        societyInfo={societyInfo}
+                        imageURL={""}
+                        generalInfo={""}
+                        locationInfo={""}
+                        societyInfo={""}
                     />
                 </div>
             </div>
