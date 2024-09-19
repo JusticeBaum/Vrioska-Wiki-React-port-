@@ -4,7 +4,7 @@ import LeftSidebar from './components/LeftSidebar';
 import SiteHeader from './components/SiteHeader';
 import MainContent from './components/MainContent';
 import RightSidebar from './components/RightSidebar';
-import { Blue, Neomona, Ortlen, Rosen, Percy, Sabellax} from './components/players/constructed_components/index'
+import { Blue, Neomona, Ortlen, Rosen, Percy, Sabellax, Solo} from './components/players/constructed_components/index'
 import { Dundax } from './components/nations/constructed_components/index'
 import { Aberdeen, Icarus } from './components/settlements/constructed_components/index'
 import { Alagadda, InnerPlanes, OneTrueWar, Time, YalDaBaoth, Eberron } from './components/misc/index'
@@ -34,6 +34,10 @@ const players = [
   {
     name: 'Sabellax',
     component: Sabellax
+  },
+  {
+    name: "SOLO",
+    component: Solo
   }
 ];
 

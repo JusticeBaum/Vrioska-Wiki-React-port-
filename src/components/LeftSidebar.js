@@ -11,7 +11,8 @@ const links = [
     { text: 'Ortlen', url: '/ortlen'},
     { text: 'Percy', url: '/percy'},
     { text: 'Rosen', url: '/rosen'},
-    { text: 'Sabellax', url: '/sabellax'}
+    { text: 'Sabellax', url: '/sabellax'},
+    { text: 'S.O.L.O', url: '/solo'}
   ],
   [ // Notable NPCs
 

@@ -114,6 +114,12 @@ h1, h2, h3 {
     justify-content: center;
 }
 
+.center #height_chart {
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+}
+
 .title-header {
     background-color: var(--center-bg);
     text-align: center;
@@ -360,3 +366,43 @@ input[type=text]:focus {
     flex-direction: row;
     gap: 20px;
   }
+
+table {
+    width: 50%;
+    border-collapse: collapse;
+    margin: 20px auto;
+}
+table, th, td {
+    border: 1px solid black;
+    border-radius: 5px;
+    background-color: var(--col-bg);
+}
+th, td {
+    padding: 10px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+th {
+    background-color: #f2f2f2;
+    border-radius: 5px;
+    background-color: var(--col-bg);
+}
+
+.center img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.party-container {
+    display: flex;
+    gap: 20px;
+}
+
+.party-container {
+    max-width: 100%;
+    height: auto;
+    border: 2px solid #ccc; /* Optional: adds a border around images */
+    border-radius: 8px; /* Optional: rounds the corners of images */
+}
